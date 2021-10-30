@@ -18,13 +18,14 @@ h3 {
   min-width: 100vw;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto 40vh 25vh 1fr;
+  grid-template-rows: auto 40vh 23vh 40vh 20vh;
   margin: 0 auto;
   justify-content: center;
   grid-template-areas:
     "header header"
     "main main"
     "aside1 aside2"
+    "aside3 aside4"
     "footer footer";
 }
 
@@ -40,7 +41,7 @@ main {
 main {
   grid-area: main;
 }
-aside {
+.aside1 {
   grid-area: aside1;
 }
 .aside2 {
@@ -48,6 +49,12 @@ aside {
 }
 footer {
   grid-area: footer;
+}
+.aside3 {
+  grid-area: aside3;
+}
+.aside4 {
+  grid-area: aside4;
 }
 
 /* coloring */
@@ -60,7 +67,8 @@ footer {
 }
 
 footer {
-  background: linear-gradient(#d4d4cd, #5d5d5d);
+  background: linear-gradient(#d4d4cd, #bebeb8, #5d5d5d);
+  background-repeat: no-repeat;
 }
 
 .aside1 {
@@ -94,9 +102,11 @@ header {
 /* Main */
 
 .main {
+  grid-area: main;
 }
 
 .main_container {
+  grid-area: main;
 }
 
 .main_left {
@@ -104,10 +114,12 @@ header {
 }
 
 .main_right {
+  display: flex;
   float: right;
+  margin-bottom: 300px;
 }
 
-img {
+main img {
   width: 960px;
   height: auto;
   max-width: 100%;
@@ -115,8 +127,43 @@ img {
 
 /* aside */
 
-.aside {
+.aside1 {
   display: grid;
+}
+
+.aside2 {
+  display: grid;
+}
+
+.aside3 {
+  display: grid;
+}
+
+.aside3_text {
+  font-size: 5em;
+  text-align: left;
+  color: #0a3641;
+  font-style: normal;
+  margin: 5px;
+  margin-top: 5px;
+}
+
+.instagram_container {
+  display: flex;
+  font-size: 0;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.instagram_item {
+  border: 2px solid #196173;
+  margin: 20px;
+}
+
+.aside4 img {
+  width: auto;
+  height: 150px;
 }
 
 .aside1_text {
@@ -125,11 +172,11 @@ img {
   color: #0a3641;
   font-style: normal;
   margin: 5px;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
 .aside2_text {
-  font-size: 4.2em;
+  font-size: 5em;
   text-align: left;
   margin-left: 40px;
   color: #0a3641;
@@ -158,23 +205,15 @@ a {
 
 /* Footer */
 
-.instagram_container {
-  display: block;
-}
-
-.instagram1 {
-  float: left;
-}
-
-.instagram3 {
-  float: right;
+footer {
 }
 
 .footer_logo_container {
-  position: relative;
-  text-align: center;
 }
 
 .footer_logo {
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
