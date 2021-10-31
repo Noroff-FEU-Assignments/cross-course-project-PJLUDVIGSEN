@@ -145,7 +145,6 @@ header {
 
 .aside1 {
   display: grid;
-  border-left: 2px solid #196173;
   border-right: 1px solid #196173;
   border-top: 2px solid #196173;
   border-bottom: 2px solid #196173;
@@ -209,12 +208,6 @@ header {
   margin: 20px;
 }
 
-.instagram_icon {
-  margin-left: 10px;
-  width: auto;
-  height: 40px;
-}
-
 .aside4_text {
   position: absolute;
   margin-left: 20px;
@@ -233,16 +226,19 @@ header {
 }
 
 .aside1_text {
-  font-size: 5em;
+  font-size: 4vw;
   text-align: left;
   color: #0a3641;
   font-style: normal;
   margin: 5px;
   margin-top: 5px;
+  list-style-type: none;
+  margin-left: -31px;
+  font-weight: bold;
 }
 
 .aside2_text {
-  font-size: 5em;
+  font-size: 4vw;
   text-align: left;
   margin-left: 40px;
   color: #0a3641;
