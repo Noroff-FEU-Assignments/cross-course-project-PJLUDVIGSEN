@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Rainydays Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rainydays pushing the comfort zone">
-    <link href="css/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="grid_container">
-      <header>
-        <div class="bg-image">
-        </div>
-        <div>
-          <img class="logo" src="images/RainyDays_Logo.png" alt="Rainydayslogo">
-        </div>
+
+  <body class="body_home">
+    <header>
+      <div class="logo_container">
+        <img class="logo" src="images/RainyDays_Logo.png" alt="Rainydayslogo">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a> <img src="icons/Group 44.svg" alt="home icon"></li>
+            <li><a href="index.html">Home</a> <img class="home_icon icon" src="icons/Group_44.svg" alt="home icon"></li>
             <li><a href="shop.html">Shop</a> <img class="shop_icon icon" src="icons/shopping-cart.svg" alt="shop icon"></li>
             <li><a href="contact.html">Contact</a> <img class="contact_icon icon" src="icons/call.svg" alt="contact icon"></li>
             <li><a href="about.html">About Us</a> <img class="about_icon icon" src="icons/question.svg" alt="about us icon"></li>
           </ul>
         </nav>
-      </header>
-      <main>
-        <div class="main_container">
-          <div class="main_left">
-            <img id="yellowjacket" src="images/yellowjacket1.jpg"  alt="Yellow rainydays jacket worn in wet conditions">
-          </div>
-          <div class="main_right">
-            <img id="brownjacket" src="images/homepagepicture1.jpg" alt="Brown rainydays jacket resting hands on head">
-          </div>
+      </div>
+    </header>
+
+    <main class="main_home">
+      <div class="top_container">
+          <img id="yellowjacket" src="images/yellowjacket1.jpg" alt="Yellow rainydays jacket worn in wet conditions">
+          <img id="brownjacket" src="images/homepagepicture1.jpg" alt="Brown rainydays jacket resting hands on head">
+      </div>
+
+      <section></section>
+      <div class="quotes">
+        <h1>Explore and <span class="adventure">adventure</span></h1>
+        <h1>while staying warm and dry</h1>
+      </div>
+      
+      <div class="news_container">
+        <a href="shop.html">Check out news in shop here<img class="blue_shop_icon" src="icons/shopping-cart-darkblue.svg" alt="shopping cart icon"></a>
+      </div>
+
+      <div class="quotes_footer">
+        <h2>The <span class="key">key</span> is</h2>
+        <h2>being <span class="comfortable">comfortable</span></h2>
+        <h2>doing the <span class="uncomfortable">uncomfortable</span></h2>
+      </div>
+
+      <section class="instagram_container">
+        <div><img class="instagram1 instagram_item" src="images/snowboard.jpg" alt="Snowboarder wearing jacket"></div>
+        <div><img class="instagram2 instagram_item" src="images/aboutus.jpg" alt="Guy wearing jacket at beach"></div>
+        <div><img class="instagram3 instagram_item" src="images/icethinking.jpg" alt="Guy sitting on thick ice wearing jacket"></div>
+        <div class="instagram_text">
+          <a href="---">Dive into our instagram <img class="instagram_icon" src="icons/instagram_icon.svg" alt="instagram icon"></a>
         </div>
-      </main>
-      <aside class="aside1">
-        <ul class="aside1_text aside_text">
-          <li>Explore and <span class="adventure">adventure</span></li>
-          <li>while staying warm and dry</li>
-        </ul>
-      </aside>
-      <aside class="aside2">
-        <h2 class="aside2_text aside_text">Check out news in shop here<img class="blue_shop_icon" src="icons/shopping-cart-darkblue.svg" alt="shopping cart icon"></h2>
-      </aside>
-      <aside class="aside3 aside_text">
-        <ul class="aside3_text">
-          <li>The <span class="key">key</span> is</li>
-          <li>being <span class="comfortable">comfortable</span></li>
-          <li>doing the <span class="uncomfortable">uncomfortable</span></li>
-        </ul>
-      </aside>
-      <aside class="aside4">
-        <section class="instagram_container">
-          <img class="instagram1 instagram_item" src="images/snowboard.jpg" alt="Snowboarder wearing jacket">
-          <img class="instagram2 instagram_item" src="images/aboutus.jpg" alt="Guy wearing jacket at beach">
-          <img class="instagram3 instagram_item" src="images/icethinking.jpg" alt="Guy sitting on thick ice wearing jacket">
-        </section>
-        <div class="aside4_text aside_text">
-          <p>Dive into our instagram <img class="instagram_icon" src="icons/instagram_icon.svg" alt="instagram icon"></p>
-        </div>
-      </aside>
-      <footer>
-        <img  class="footer_logo" src="images/logo_mountain.png" alt="Mountain from rainydays logo">
-      </footer>
-    </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <img class="footer_logo" src="images/logo_mountain.png" alt="Mountain from rainydays logo">
+    </footer>
   </body>
 </html>
