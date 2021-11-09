@@ -178,17 +178,13 @@ figure {
 
 footer {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
 }
 
 .footer_logo {
   width: 90vw;
   align-items: center;
   justify-content: center;
-}
-
-footer {
-
 }
 
 /* SHOP PAGE ****************************************************************************************************************************************/
@@ -234,6 +230,8 @@ footer {
   background-position-y: -1355px;
 }
 
+/* Product Specific page ********************************************************************************/
+
 .cta {
   background-color: #196173;
   color: #d4d4cd;
@@ -245,5 +243,84 @@ footer {
   text-transform: uppercase;
   margin-top: 360px;
   margin-left: -30px;
-  
+}
+
+/* Checkout Page ****************************************************************************************/
+
+#checkout_h1 {
+  padding-top: 10px;
+  font-size: 3em;
+}
+
+#checkout_h2 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
+.main_checkout h1 {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_checkout {
+  color: #d4d4cd;
+  height: 500px;
+}
+
+.checkout_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.checkout_container > * {
+  margin-right: 40px;
+}
+
+.checkout_info {
+  border: 2px solid #196173;
+  width: 180px;
+  height: 200px;
+  margin-top: 71.2px;
+}
+
+.checkout_info p {
+  margin-left: 10px;
+}
+
+.checkout_product {
+  display: flex;
+  height: 200px;
+  border: 2px solid #196173;
+  margin-top: 71.2px;
+}
+
+form {
+  border: 2px solid #196173;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.form_container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.cta_checkout {
+  background-color: #196173;
+  color: #d4d4cd;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: tahoma;
+  text-transform: uppercase;
+  justify-content: center;
 }
