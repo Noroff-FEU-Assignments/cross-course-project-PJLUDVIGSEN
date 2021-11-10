@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>Rainydays Contact us</title>
+  <title>Rainydays Checkout success</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Rainydays">
+  <meta name="description" content="Checkout success">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -29,33 +29,25 @@
     </div>
   </header>
 
-  <main class="main_contact main_shop">
-    <h1 id="contact_h1">Contact us</h1>
-    <section class="contact_container">
-      <div class="contact_info_container">
-        <div class="icon_contact">
-          <div><img src="./icons/pin.svg" alt="pin icon"></div>
-          <div><img src="./icons/mail.svg" alt="email icon"></div>
-          <div><img src="./icons/call_blue.svg" alt="phone icon"></div>
-        </div>
-        <div class="contact_text">
-          <p> 1337, Internetstreet</p>
-          <p>333 Norway</p>
-          <p> hello@rainydays.com</p>
-          <p> +4722334455</p>
-        </div>
-      </div>
+  <main class="main_checkout_success main_shop">
+    <section class="checkout_text_container">
       <div>
-        <form class="form_contact" method="post">
-          <label for="firstname">First name:</label>
-          <input type="text" id="firstname" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="phone">Phone:</label>
-          <input type="number" id="phone" name="phone">
-          <label for="message">Message:</label>
-          <input type="text" name="message" id="message">
-        </form>
+        <img src="/icons/checkmark.svg" alt="checkmark icon">
+      </div>
+      <h1>Thank you for your purchase</h1>
+      <p>Your order number is: 00001337</p>
+      <p>We'll email you an order confirmation with details and tracking info</p>
+      <h2>What you bought</h2>
+    </section>
+    <section class="success_container">
+      <div class="product_success">
+        <img src="./images/product1.png" alt="Black Rainydays jacket">
+      </div>
+      <div class="info_success">
+        <p>Product:Rainyjacket v1 200$</p>
+        <p>Amount:1</p>
+        <p>Shipping:Not calculated</p>
+        <p>Price:200$</p>
       </div>
     </section>
   </main>
