@@ -368,9 +368,17 @@ footer {
 
 /* CONTACT-US PAGE *******************************************************************************************************************************************************/
 
+.main_contact {
+  height: 500px;
+}
+
 #contact_h1 {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 3em;
+  color: #196173;
 }
 
 .contact_info_container {
@@ -378,6 +386,8 @@ footer {
   flex-direction: row;
   border: 2px solid #196173;
   color: #196173;
+  width: 300px;
+  height: auto;
 }
 
 .contact_container {
@@ -389,15 +399,68 @@ footer {
 .icon_contact {
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .icon_contact img {
   width: 22px;
-  margin-top: 26px;
+  height: auto;
+}
+
+.icon_pin {
+  margin-top: 38px;
+}
+
+.icon_mail {
+  margin-top: 17px;
+}
+
+.icon_caller {
+  margin-top: 10px;
 }
 
 .form_contact {
   display: flex;
   flex-direction: column;
   flex: 0;
+  width: 300px;
+  height: auto;
+  color: #196173;
+  padding-top: 10px;
+
 }
+
+/* ABOUT-US PAGE *******************************************************************************************************************************************************/
+
+#about_h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 10px;
+  font-size: 3em;
+  color: #196173;
+}
+
+.about_container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about_1 {
+  padding-top: 0;
+
+}
+
+.about_2 {
+
+}
+
+.about_2 img {
+  width: 300px;
+  height: auto;
+}
+
