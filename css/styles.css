@@ -185,6 +185,7 @@ footer {
   width: 90vw;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 /* SHOP PAGE ****************************************************************************************************************************************/
@@ -225,7 +226,7 @@ footer {
 }
 
 .main_shop {
-  background-image: url(../images/frontpagebackground2.jpg);
+  background-image: url(../images/frontpagebackground3.jpg);
   background-repeat: no-repeat;
   background-position-y: -1355px;
 }
@@ -267,14 +268,13 @@ footer {
 }
 
 .main_checkout {
-  color: #d4d4cd;
-  height: 500px;
+  color:#196173;
+  height: 530px;
 }
 
 .checkout_container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .checkout_container > * {
@@ -318,33 +318,54 @@ footer {
   text-transform: uppercase;
   text-align: center;
   justify-self: start;
+  margin-top: 10px;
 }
 
-.product_container {
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
 
 .checkout_product {
   display: flex;
   height: 200px;
   border: 2px solid #196173;
   margin-top: 71.2px;
+  margin-right: 20px;
 }
 
+.checkout_bottom_container {
+  display: flex;
+}
 /* CHECKOUT SUCCESS PAGE *******************************************************************************************************************************************************/
 
 .main_checkout_success {
   margin-bottom: 20px;
-  height: 620px;
+  height: 600px;
   color: #196173;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.success_border {
+  border: 2px solid #196173;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#success_h1 {
+  font-size: 3em;
+  margin: 0;
 }
 
 .checkout_text_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
+}
+
+.checkout_text_container p {
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .success_container {
@@ -366,10 +387,15 @@ footer {
   height: 200px;
 }
 
+.info_success p {
+  margin-left: 20px;
+  margin-top: 22px;
+}
+
 /* CONTACT-US PAGE *******************************************************************************************************************************************************/
 
 .main_contact {
-  height: 500px;
+  height: 600px;
 }
 
 #contact_h1 {
@@ -386,7 +412,7 @@ footer {
   flex-direction: row;
   border: 2px solid #196173;
   color: #196173;
-  width: 300px;
+  width: 350px;
   height: auto;
 }
 
@@ -424,11 +450,34 @@ footer {
   display: flex;
   flex-direction: column;
   flex: 0;
-  width: 300px;
+  width: 350px;
   height: auto;
   color: #196173;
   padding-top: 10px;
+  font-size: 1.5em;
+}
 
+textarea, input {
+  resize: none;
+  background: transparent;
+  border: 2px solid #196173;
+}
+
+#message {
+  width: auto;
+  height: 100px;
+}
+
+.cta_contact {
+  background-color: #196173;
+  color: #d4d4cd;
+  border-radius: 30px;
+  font-size: .8em;
+  font-weight: bold;
+  font-family: tahoma;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* ABOUT-US PAGE *******************************************************************************************************************************************************/
@@ -445,22 +494,60 @@ footer {
 .about_container {
   display: flex;
   justify-content: center;
-  width: 500px;
+  width: 600px;
   height: auto;
   margin: 0 auto;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .about_1 {
-  padding-top: 0;
+  margin-right: 10px;
+}
 
+.about_1 p {
+  margin-top: 0px;
+  font-family: tahoma;
+  font-weight: 400;
+  color: #196173;
 }
 
 .about_2 {
-
+  margin-left: 10px;
 }
 
 .about_2 img {
+  display: flex;
   width: 300px;
   height: auto;
+  border: 2px solid #196173;
 }
 
+/* MEDIA QUERYS *******************************************************************************************************************************************************/
+
+@media (max-width: 860px) {
+main, .main_shop, header {
+  background-image: none;
+}
+
+}
+
+@media (max-width: 800px) {
+.checkout_product {
+  height: 100px;
+}
+
+.checkout_bottom_container {
+  flex-direction: column;
+}
+
+
+.checkout_info {
+  margin-top: 10px;
+  width: 200px;
+}
+.checkout_container {
+  padding-left: 30px;
+}
+
+}
