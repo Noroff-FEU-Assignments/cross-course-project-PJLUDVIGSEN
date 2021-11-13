@@ -46,10 +46,14 @@ nav li {
   display: inline-block;
   padding: 4px 35px 4px 35px;
   background-color: #0a3641;
-  border: 2px solid;
-  color: #196173;
+  border: 2px solid #196173;
+  color: #0a3641;
   margin: 10px;
   font-size: 1.5em;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 a {
@@ -90,11 +94,6 @@ a {
   box-sizing: border-box;
 }
 
-.footer_home div {
-}
-
-.section_weird {
-}
 /* QUOTES */
 
 .quotes {
@@ -138,6 +137,7 @@ a {
 .blue_shop_icon {
   width: 3.2vw;
   margin-left: 10px;
+  margin-bottom: 6px;
 }
 
 /* Quotes Footer */
@@ -212,14 +212,14 @@ footer {
 }
 
 .product {
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   margin-right: 50px;
   margin-left: 50px;
 }
 
 .product_price {
   margin-left: 50px;
-  background-color: #196173;
+  background-color: #0a3641;
   padding-top: 10px;
   margin-top: -40px;
   margin-right: 50px;
@@ -256,12 +256,12 @@ footer {
   text-align: left;
   font-family: futura-pt, sans-serif;
   font-weight: 800;
-  color: #196173;
+  color: #0a3641;
   margin-top: 200px;
 }
 
 .cta {
-  background-color: #196173;
+  background-color: #0a3641;
   color: #d4d4cd;
   padding: 10px 20px;
   border-radius: 30px;
@@ -296,7 +296,7 @@ footer {
 }
 
 .main_checkout {
-  color: #196173;
+  color: #0a3641;
   height: 530px;
 }
 
@@ -310,7 +310,7 @@ footer {
 }
 
 .checkout_info {
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   width: 250px;
   height: 200px;
   margin-top: 71.2px;
@@ -322,7 +322,7 @@ footer {
 }
 
 .form1 {
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -336,7 +336,7 @@ footer {
 }
 
 .cta_checkout {
-  background-color: #196173;
+  background-color: #0a3641;
   color: #d4d4cd;
   padding: 10px 20px;
   border-radius: 30px;
@@ -352,7 +352,7 @@ footer {
 .checkout_product {
   display: flex;
   height: 200px;
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   margin-top: 71.2px;
   margin-right: 20px;
 }
@@ -365,13 +365,13 @@ footer {
 .main_checkout_success {
   margin-bottom: 20px;
   height: 600px;
-  color: #196173;
+  color: #0a3641;
   padding-top: 10px;
   padding-bottom: 5px;
 }
 
 .success_border {
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   height: auto;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -404,12 +404,12 @@ footer {
 .product_success {
   display: flex;
   height: 200px;
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   margin-right: 50px;
 }
 
 .info_success {
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
   width: 250px;
   height: 200px;
 }
@@ -431,14 +431,14 @@ footer {
   margin: 0;
   padding-top: 10px;
   font-size: 3em;
-  color: #196173;
+  color: #0a3641;
 }
 
 .contact_info_container {
   display: flex;
   flex-direction: row;
-  border: 2px solid #196173;
-  color: #196173;
+  border: 2px solid #0a3641;
+  color: #0a3641;
   width: 350px;
   height: auto;
 }
@@ -479,7 +479,7 @@ footer {
   flex: 0;
   width: 350px;
   height: auto;
-  color: #196173;
+  color: #0a3641;
   padding-top: 10px;
   font-size: 1.5em;
 }
@@ -488,7 +488,7 @@ textarea,
 input {
   resize: none;
   background: transparent;
-  border: 2px solid #196173;
+  border: 2px solid #0a3641;
 }
 
 #message {
@@ -497,7 +497,7 @@ input {
 }
 
 .cta_contact {
-  background-color: #196173;
+  background-color: #0a3641;
   color: #d4d4cd;
   border-radius: 30px;
   font-size: 0.8em;
@@ -516,7 +516,7 @@ input {
   margin: 0;
   padding-top: 10px;
   font-size: 3em;
-  color: #196173;
+  color: #0a3641;
 }
 
 .about_container {
@@ -537,7 +537,7 @@ input {
   margin-top: 0px;
   font-family: tahoma;
   font-weight: 400;
-  color: #196173;
+  color: #0a3641;
 }
 
 .about_2 {
@@ -680,6 +680,16 @@ input {
 
   .quotes h1 {
     line-height: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  #success_h1 {
+    text-align: center;
+  }
+
+  .checkout_text_container p {
+    text-align: center;
   }
 }
 
