@@ -17,7 +17,7 @@ body {
 body {
   background: linear-gradient(#d4d4cd, #4b4b4b);
 }
-/* HEADER */
+/* HEADER ***********************************************************************************************************************/
 
 header {
   background-image: url(../images/frontpagebackground.jpg);
@@ -36,7 +36,7 @@ header {
   margin: 0 auto;
 }
 
-/* MAIN */
+/* MAIN *************************************************************************************************************************/
 .main_home {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -94,7 +94,7 @@ a {
   box-sizing: border-box;
 }
 
-/* QUOTES */
+/* QUOTES ************************************************************************************************************************/
 
 .quotes {
   flex-direction: column;
@@ -140,7 +140,7 @@ a {
   margin-bottom: 6px;
 }
 
-/* Quotes Footer */
+/* Quotes Footer *****************************************************************************************************/
 
 .quotes_footer {
   font-size: 3vw;
@@ -150,7 +150,7 @@ a {
   color: #0a3641;
 }
 
-/* INSTAGRAM */
+/* INSTAGRAM **********************************************************************************************************/
 
 .instagram_container {
   display: flex;
