@@ -53,17 +53,32 @@
           <p> +4722334455</p>
         </div>
       </div>
-      <div>
-        <form class="form_contact" method="post">
-          <label for="firstname">name:</label>
-          <input type="text" id="firstname" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone">
-          <label for="message">Message:</label>
-          <textarea name="message" id="message"></textarea>
-          <input type="submit" value="Send Now" class="cta_contact"/>
+      <div class="contactContainer">
+        <form class="form_contact" method="get">
+          <div>
+            <label for="firstname">name:</label>
+            <div id="fullNameError" class="formError">Please enter your name*</div>
+            <input type="text" id="name" name="name">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <div id="emailError" class="formError">Please enter a valid email address*</div>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div>
+            <label for="phone">Phone:</label>
+            <div id="phoneError" class="formError">Please enter your phone number*</div>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+            <div id="mesageError" class="formError">Your message must contain at least 10 characters*
+          </div>
+          <button type="button" class="cta_contact">Send Now</button>
         </form>
       </div>
     </section>
@@ -79,6 +94,7 @@
     </section>
     <img class="footer_logo" src="images/logo_mountain.png" alt="Mountain from rainydays logo">
   </footer>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

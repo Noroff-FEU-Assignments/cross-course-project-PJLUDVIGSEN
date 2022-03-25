@@ -419,7 +419,7 @@ footer {
 /* CONTACT-US PAGE *******************************************************************************************************************************************************/
 
 .main_contact {
-  height: 600px;
+  height: 700px;
 }
 
 #contact_h1 {
@@ -436,14 +436,12 @@ footer {
   flex-direction: row;
   border: 2px solid #0a3641;
   color: #0a3641;
-  width: 350px;
-  height: auto;
+  width: 100%;
 }
 
 .contact_container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .icon_contact {
@@ -470,39 +468,44 @@ footer {
   margin-top: 10px;
 }
 
+.contactContainer {
+  margin: 0 auto;
+  max-width: 350px;
+}
+
 .form_contact {
-  display: flex;
-  flex-direction: column;
-  flex: 0;
-  width: 350px;
-  height: auto;
   color: #0a3641;
   padding-top: 10px;
-  font-size: 1.5em;
+
 }
 
 textarea,
 input {
-  resize: none;
+  width: 100%;
   background: transparent;
   border: 2px solid #0a3641;
 }
 
 #message {
-  width: auto;
-  height: 100px;
+  max-height: 100px;
 }
 
 .cta_contact {
   background-color: #0a3641;
   color: #d4d4cd;
   border-radius: 30px;
-  font-size: 0.8em;
+  font-size: 1em;
+  padding: 5px 40px;
   font-weight: bold;
   font-family: tahoma;
   text-transform: uppercase;
-  text-align: center;
   margin-top: 10px;
+}
+
+.formError {
+  color: rgb(156, 55, 55);
+  display: none;
+  font-size: 0.6em;
 }
 
 /* ABOUT-US PAGE *******************************************************************************************************************************************************/
