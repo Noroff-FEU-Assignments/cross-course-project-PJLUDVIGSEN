@@ -36,6 +36,25 @@ header {
   margin: 0 auto;
 }
 
+.cart_link {
+  position: absolute;
+  width: 3em;
+  background-color: #d4d4cd;
+  border-radius: 50px;
+  margin: 20px 20px 0px 0px;
+  right: 0;
+  top: 0;
+  padding: 15px 10px;
+}
+
+.cart_icon {
+  width: 2em;
+  padding-top: 5px;
+}
+
+a.cart_link:hover {
+  border: 2px solid #0a3641;
+}
 /* MAIN *************************************************************************************************************************/
 .main_home {
   display: grid;
@@ -214,6 +233,18 @@ footer {
   margin-left: 50px;
 }
 
+.product1:hover {
+  margin-top: -20px;
+}
+
+.product2:hover {
+  margin-top: -20px;
+}
+
+.product3:hover {
+  margin-top: -20px;
+}
+
 .product_price {
   margin-left: 50px;
   background-color: #0a3641;
@@ -255,6 +286,8 @@ footer {
   font-weight: 800;
   color: #0a3641;
   margin-top: 200px;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .cta {
@@ -271,6 +304,18 @@ footer {
   margin-left: -150px;
 }
 
+.cta:hover {
+  border-color: #196173;
+}
+
+.atc {
+  margin-left: 20px;
+  border-color: #0a3641;
+}
+
+.atc:hover {
+  background-color: #0a3641;
+}
 /* Checkout Page ****************************************************************************************/
 
 #checkout_h1 {
@@ -310,7 +355,7 @@ footer {
   border: 2px solid #0a3641;
   width: 250px;
   height: 200px;
-  margin-top: 71.2px;
+  margin-top: 81px;
 }
 
 .checkout_info p {
@@ -323,13 +368,14 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  padding-right: 20px;
 }
 
 .form_container {
   flex-direction: column;
   display: flex;
   align-items: center;
-  margin-top: -10px;
+  padding: 20p;
 }
 
 .cta_checkout {
@@ -350,12 +396,12 @@ footer {
   display: flex;
   height: 200px;
   border: 2px solid #0a3641;
-  margin-top: 71.2px;
   margin-right: 20px;
 }
 
 .checkout_bottom_container {
   display: flex;
+  flex-direction: ;
 }
 /* CHECKOUT SUCCESS PAGE *******************************************************************************************************************************************************/
 
@@ -431,6 +477,17 @@ footer {
   color: #0a3641;
 }
 
+#messageSuccess {
+  white-space: nowrap;
+  display: none;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 2.35em;
+  color: #0a3641;
+}
+
 .contact_info_container {
   display: flex;
   flex-direction: row;
@@ -476,7 +533,6 @@ footer {
 .form_contact {
   color: #0a3641;
   padding-top: 10px;
-
 }
 
 textarea,
@@ -505,7 +561,7 @@ input {
 .formError {
   color: rgb(156, 55, 55);
   display: none;
-  font-size: 0.6em;
+  font-size: 1em;
 }
 
 /* ABOUT-US PAGE *******************************************************************************************************************************************************/

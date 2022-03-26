@@ -2,7 +2,7 @@ const fullName = document.querySelector("#name");
 const phone = document.querySelector("#phone");
 const email = document.querySelector("#email");
 const message = document.querySelector("#message");
-const form = document.querySelector("#contactform");
+const form = document.querySelector("#contactForm");
 const button = document.querySelector("button");
 // const message = document.querySelector("#message");
 
@@ -11,8 +11,9 @@ const phoneError = document.querySelector("#phoneError");
 const emailError = document.querySelector("#emailError");
 const messageError = document.querySelector("#messageError");
 
+const messageSuccess = document.querySelector("#messageSuccess");
 
-button.onclick = function (event) {
+button.onclick = function () {
   if (checkLength(fullName.value, 1) === true) {
     fullNameError.style.display = "none";
   } else {
@@ -23,7 +24,10 @@ button.onclick = function (event) {
   } else {
     phoneError.style.display = "block";
   }
-  if (checkEmail(email.value) === true) {
+  if (
+    checkEmail(email.value) === true &&
+    checkLength(email.value, 1) === true
+  ) {
     emailError.style.display = "none";
   } else {
     emailError.style.display = "block";
@@ -40,6 +44,8 @@ button.onclick = function (event) {
     checkLength(message.value, 10)
   ) {
     form.reset();
+    form.style.display = "none";
+    messageSuccess.style.display = "block";
   }
   event.preventDefault();
 };
