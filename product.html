@@ -29,22 +29,32 @@
       <a href="/index.html"><img class="logo" src="images/RainyDays_Logo.png" alt="Rainydayslogo"></a>
       <a class="cart_link" href="checkout.html"><img class="cart_icon" src="icons/shopping-cart-darkblue.svg"
           alt="Cart icon"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home <img class="home_icon icon" src="icons/Group_44.svg" alt="home icon"></a></li>
-          <li><a href="shop.html">Shop <img class="shop_icon icon" src="icons/shopping-cart.svg" alt="shop icon"></a>
-          </li>
-          <li><a href="contact.html">Contact <img class="contact_icon icon" src="icons/call.svg" alt="contact icon"></a>
-          </li>
-          <li><a href="about.html">About Us <img class="about_icon icon" src="icons/question.svg" alt="about us icon"></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <div class="cart_amount">0</div>
+            <div class="cart_notification">
+              <img id="blackJacket" class="cart_image" src="images/product1.png" alt="Black Rainydays jacket">
+              <p>Added to cart</p>
+            </div>
+            <label for="hamburger-menu"><img class="hamburger_svg" src="icons/hamburger_menu.svg" alt="hamburgermenu logo"></label>
+            <input type="checkbox" id="hamburger-menu">
+            <div class="nav-container">
+              <nav>
+                <ul>
+                  <li><a class="active" href="index.html">Home</a> <img class="home_icon icon" src="icons/Group_44.svg"
+                      alt="home icon"></li>
+                  <li class="shop_ul"><a href="shop.html">Shop</a> <img class="shop_icon icon" src="icons/shopping-cart.svg"
+                      alt="shop icon"></li>
+                  <li class="contact_ul"><a href="contact.html">Contact</a> <img class="contact_icon icon" src="icons/call.svg"
+                      alt="contact icon"></li>
+                  <li><a href="about.html">About Us</a> <img class="about_icon icon" src="icons/question.svg" alt="about us icon">
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            </header>
 
   <main class="main_shop main_product">
     <div class="products">
-      <div class="product1">
+      <div id="productContainer" class="product1">
           <img class="product product_specific" src="images/product1.png" alt="Black Rainydays jacket">
           <div class="product_price">
             <h3>Rainyjacket v1<span class="price">200$</span></h3>
@@ -79,6 +89,8 @@
     </section>
     <img class="footer_logo" src="images/logo_mountain.png" alt="Mountain from rainydays logo">
   </footer>
+  <script src="js/product.js"></script>
+  <script src="js/shop.js"></script>
 </body>
 
 </html>
