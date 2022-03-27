@@ -83,7 +83,7 @@ a.cart_link:hover {
   margin: 0;
 }
 
-.cart_image{
+.cart_image {
   max-width: 80px;
   align-items: center;
   margin: 0 auto;
@@ -390,7 +390,7 @@ footer {
 }
 
 .checkout_container > * {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .checkout_info {
@@ -417,7 +417,6 @@ footer {
   flex-direction: column;
   display: flex;
   align-items: center;
-  padding: 20p;
 }
 
 .cta_checkout {
@@ -662,13 +661,13 @@ input {
     background-image: none;
   }
 
-.cart_link {
-  border: 2px solid #0a3641;
+  .cart_link {
+    border: 2px solid #0a3641;
   }
 
   .cart_notification {
-  border: 2px solid #0a3641;
-}
+    border: 2px solid #0a3641;
+  }
 
   #yellowjacket {
     display: none;
@@ -748,23 +747,21 @@ input {
 }
 
 @media (max-width: 702px) {
-
-    /*HAMBURGER-MENU*/
+  /*HAMBURGER-MENU*/
 
   .nav-container {
     display: none;
     position: relative;
-    flex:initial;
+    flex: initial;
   }
 
   nav {
     position: absolute;
-    background:#c5c5bf;
+    background: #c5c5bf;
     right: 0;
     position: fixed;
     width: 10em;
     border: 2px solid #0a3641;
-
   }
 
   nav li {
@@ -795,52 +792,49 @@ input {
 
   #hamburger-menu:checked ~ .nav-container {
     display: block;
+  }
 
-}
+  .cart_image {
+    max-width: 40px;
+  }
 
-.cart_image{
-  max-width: 40px;
-}
+  .cart_notification {
+    position: absolute;
+    max-width: 40px;
+    background-color: #d4d4cd;
+    right: 5px;
+    top: 50px;
+    padding: 5px;
+    font-size: 0.2em;
+  }
 
-.cart_notification {
-  position: absolute;
-  max-width: 40px;
-  background-color: #d4d4cd;
-  right: 5px;
-  top: 50px;
-  padding: 5px;
-  font-size: .2em;
-}
+  .cart_link {
+    position: absolute;
+    width: 1.7em;
+    background-color: #d4d4cd;
+    border-radius: 50px;
+    margin: 10px 10px 0px 0px;
+    right: 0;
+    top: 0;
+    padding: 7.5px 5px;
+  }
 
+  .cart_amount {
+    position: absolute;
+    width: 1em;
+    background-color: #0a3641;
+    color: #d4d4cd;
+    border-radius: 50px;
+    margin: 10px 5px 0px 0px;
+    right: 0;
+    top: 0;
+    padding: -20px;
+  }
 
-.cart_link {
-  position: absolute;
-  width: 1.7em;
-  background-color: #d4d4cd;
-  border-radius: 50px;
-  margin: 10px 10px 0px 0px;
-  right: 0;
-  top: 0;
-  padding: 7.5px 5px;
-}
-
-.cart_amount {
-  position: absolute;
-  width: 1em;
-  background-color: #0a3641;
-  color: #d4d4cd;
-  border-radius: 50px;
-  margin: 10px 5px 0px 0px;
-  right: 0;
-  top: 0;
-  padding: -20px;
-}
-
-.cart_icon {
-  width: 1em;
-  padding-top: 2.5px;
-}
-
+  .cart_icon {
+    width: 1em;
+    padding-top: 2.5px;
+  }
 }
 
 @media (max-width: 605px) {
