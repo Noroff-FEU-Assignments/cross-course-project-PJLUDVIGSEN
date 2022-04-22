@@ -11,7 +11,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const key = "/?cs_78eadeedb58981dc929f1dfba750ea4962b0bc7b";
+const key = "/?consumer_key=cs_78eadeedb58981dc929f1dfba750ea4962b0bc7b";
 
 var options = {
   method: "GET",
