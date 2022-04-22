@@ -22,7 +22,7 @@ var options = {
   },
 };
 
-const api = "http://ludvigsen.tech/wp-json/wc/store/products/" + id + key;
+const api = "https://ludvigsen.tech/wp-json/wc/store/products/" + id + key;
 
 async function displayProduct() {
   const response = await fetch(api);
