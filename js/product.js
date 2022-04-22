@@ -11,9 +11,9 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const api = "http://ludvigsen.tech/wp-json/wc/store/products/" + id;
+const key = "/cs_78eadeedb58981dc929f1dfba750ea4962b0bc7b";
 
-const button2 = document.querySelector(".btn");
+const api = "http://ludvigsen.tech/wp-json/wc/store/products/" + id + key;
 
 async function displayProduct() {
   const response = await fetch(api);
