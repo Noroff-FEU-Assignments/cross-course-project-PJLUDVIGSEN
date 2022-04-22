@@ -1,6 +1,8 @@
 const container = document.querySelector(".products");
 
-const api = "http://ludvigsen.tech/wp-json/wc/store/products/";
+const key = "?consumer_key=cs_78eadeedb58981dc929f1dfba750ea4962b0bc7b";
+
+const api = "http://ludvigsen.tech/wp-json/wc/store/products/" + key;
 
 async function fetchProduct() {
   const response = await fetch(api);
