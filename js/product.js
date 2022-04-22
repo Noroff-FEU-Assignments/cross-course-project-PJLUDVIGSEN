@@ -11,7 +11,16 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const key = "/cs_78eadeedb58981dc929f1dfba750ea4962b0bc7b";
+const key = "/?cs_78eadeedb58981dc929f1dfba750ea4962b0bc7b";
+
+var options = {
+  method: "GET",
+  headers: {
+    "x-rapidapi-host":
+      "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
+    "x-rapidapi-key": "b665035877msh195e70b6c9d4064p16ccc6jsn3c1189e52fee",
+  },
+};
 
 const api = "http://ludvigsen.tech/wp-json/wc/store/products/" + id + key;
 
