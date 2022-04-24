@@ -253,6 +253,8 @@ figure {
 
 /* FOOTER */
 
+
+
 footer {
   display: flex;
   flex-direction: column;
@@ -274,6 +276,10 @@ footer {
   margin: 0px 50px 50px 50px;
   flex-wrap: wrap;
   padding-top: 50px;
+}
+
+.shop_product {
+  width: 250px;
 }
 
 .product {

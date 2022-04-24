@@ -12,7 +12,7 @@ async function fetchProduct() {
   for (let i = 0; i <= products.length; i++) {
     container.innerHTML += `<div class="product1 prod_hover">
                               <a class="test1" href="product.html?id=${products[i].id}">
-                                <img id="blackJacket" class="product" src="${products[i].images[0].src}" alt="Black Rainydays jacket">
+                                <img id="blackJacket" class="product shop_product" src="${products[i].images[0].src}" alt="Black Rainydays jacket">
                                 <div class="product_price">
                                 <h3>${products[i].name}<span class="price">${products[i].prices.price}$</span></h3>
                                 </div>
