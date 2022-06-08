@@ -28,6 +28,10 @@ Later in the course we were also tasked with implementing different Javascript f
 - CSS
 - JS
 
+## Link to the live website
+[Rainydays](https://flamboyant-wing-ee0b42.netlify.app/)
+
+
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/per-jakob-ludvigsen-499b97219/)
